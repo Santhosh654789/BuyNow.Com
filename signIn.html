@@ -47,6 +47,17 @@
             <input type="password" id="confirmPassword" placeholder="Confirm password">
 
             <button type="submit">Sign In</button>
+
+            <p>or signin with</p>
+
+            <div class="social-login">
+
+                <img class="logo" src="https://cdn-icons-png.flaticon.com/512/281/281764.png" alt="Google" />
+                <img class="logo" src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" />
+                <img class="logo" src="https://cdn-icons-png.flaticon.com/512/0/747.png" alt="Apple" />
+                <img class="logo" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
+
+            </div>
         </form>
         <p class="login-link">
             Already have an account?
@@ -54,49 +65,7 @@
         </p>
         </form>
     </div>
-    <script>
-        function validateForm() {
-            let name = document.getElementById("name").value.trim();
-            let email = document.getElementById("email").value.trim();
-            let mobile = document.getElementById("mobile").value.trim();
-            let password = document.getElementById("password").value;
-            let confirmPassword = document.getElementById("confirmPassword").value;
-
-            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            let mobilePattern = /^[0-9]{10}$/;
-
-            if (name === "") {
-                alert("Please enter your full name");
-                return false;
-            }
-
-            if (!emailPattern.test(email)) {
-                alert("Please enter a valid email address");
-                return false;
-            }
-
-            if (!mobilePattern.test(mobile)) {
-                alert("Mobile number must be 10 digits");
-                return false;
-            }
-
-            if (password.length < 6) {
-                alert("Password must be at least 6 characters");
-                return false;
-            }
-
-            if (password !== confirmPassword) {
-                alert("Passwords do not match");
-                return false;
-            }
-
-            localStorage.setItem("userEmail", email);
-            localStorage.setItem("userPassword", password);
-
-            alert("Registration Successful!");
-            window.location.href = "login.html";
-            return false;
-        }
+    <script src="SignIn.js"> 
     </script>
 </body>
 
