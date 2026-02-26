@@ -4,4 +4,4 @@ BuyNow is a frontend-based e-commerce web project developed to understand and im
 
 This project includes responsive product cards, a mobile-friendly layout, and interactive features built using JavaScript such as button click events and dynamic UI updates. Special attention has been given to layout consistency across different screen sizes (desktop and mobile), making the application more practical and real-world oriented.
 
-BuyNow helped in strengthening fundamentals of frontend development, DOM manipulation, event handling, and responsive design. It is a beginner-to-intermediate level project and can be extended further by adding features like cart management, checkout flow, and backend integration in the future.
+BuyNow helped in strengthening fundamentals of frontend development, DOM manipulation, event handling, and responsive design. It is a beginner-to-intermediate level project.
